@@ -3,23 +3,98 @@
     height: 500px; /* Adjust the height as needed */
 }
 
-/* Style the main container */
+.jumbotron {
+    margin-top: 20px;
+}
+
+
+#summary {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#summary h3{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#main {
+    display: flex;
+    flex-wrap: column;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.facts {
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 500px;
+    margin-right: 0px;
+}
+
+.facts h5{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.facts li{
+    margin-left: 15px;
+}
+
+
+#input-panel {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#input-panel h5{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
 #categories {
     display: flex;
     flex-direction: column; /* Display items in a column */
-    gap: 20px; /* Adjust the gap between label and dropdown containers as needed */
+    gap: 5px; /* Adjust the gap between label and dropdown containers as needed */
   }
   
   /* Style the labels to have a fixed width */
-  .categorical-item label {
+.categorical-item label {
     width: 200px; 
     display: inline-block; /* Keep labels in a block to respect the width */
-    text-align: right; /* Align labels to the right */
+    text-align: left; /* Align labels to the right */
     margin-right: 10px; /* Add some spacing between label and dropdown */
   }
   
   /* Style the select elements to have a consistent width */
-  .categorical-item select {
-    width: 20%; /* Ensure the select element fills its container */
+.categorical-item select {
+    width: 30%; /* Ensure the select element fills its container */
   }
-  
+
+#checkEdible {
+    margin-top: 20px;
+    margin-left: 125px;
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+#results {
+    width: 50%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

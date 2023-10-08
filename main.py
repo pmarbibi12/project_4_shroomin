@@ -51,11 +51,11 @@ def predict():
     try:
         # Get the selected values from the POST request
         selected_values = request.get_json()
-        print(selected_values)
-        print("Hello")
+        # print(selected_values)
+        # print("Hello")
 
         X_dummies = pd.get_dummies(X)
-        print(X_dummies.head())
+        # print(X_dummies.head())
 
         # Preprocess the selected values (e.g., convert them to the format expected by your model)
         user_input_df = pd.DataFrame(columns=X_dummies.columns)
@@ -75,13 +75,13 @@ def predict():
 
         user_input_df = user_input_df.fillna(0)
 
-        print(user_input_df.head())
+        # print(user_input_df.head())
 
         # Use your trained model to make a prediction
         prediction = model.predict(user_input_df)
 
         prediction_list = prediction.tolist()
-        print(f"prediction: {prediction}")
+        # print(f"prediction: {prediction}")
         # Return the prediction as a response
         return jsonify({'prediction': prediction_list})
 

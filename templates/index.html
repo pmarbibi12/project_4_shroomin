@@ -11,20 +11,24 @@
         <div class="jumbotron text-center">
             <h1>Got mushroom?</h1>
         </div>
-        <div class="summary">
+        <div id="summary" class="container">
             <h3>Our mission:</h3>
             <p>Whether you are firing up the grill for a weekend cookout or embarking on a quest to save a princess from an evil turtle-like creature, mushrooms can be the key ingredient for success! Our goal is to make identifying both delicious and potentially poisonous mushrooms as easy as possible. Utilizing the power of machine learning and the extensive dataset we've collected from UC Irvine's Machine Learning Repository, we've developed a sophisticated model capable of predicting whether a mushroom is edible or poisonous with precision.</p>
         </div>
-        <div class="facts">
-            <h5>Mushroom Facts:</h5>
-            <li>Fact 1</li>
-            <li>Fact 2</li>
-            <li>Fact 3</li>
-        </div>
-        <div id="input-panel">
-            <h5>Found a mushroom?</h5>
-            <div class="container" id="categories"></div>
-            <button id="checkEdible" onclick="is_edible()">Edible?</button>
+        <div class="container" id="main">
+            <div class="facts">
+                <h5>Mushroom Facts:</h5>
+                <li>Fact 1</li>
+                <li>Fact 2</li>
+                <li>Fact 3</li>
+            </div>
+            <div id="input-panel">
+                <h5>Found a mushroom?</h5>
+                <div class="container" id="categories"></div>
+                <button id="checkEdible" onclick="is_edible()">Edible?</button>
+            </div>
+            <div id="results" class="container">
+            </div>
         </div>
     </div>
     <script src="./static/js/script.js"></script>
