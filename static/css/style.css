@@ -26,10 +26,12 @@
     box-sizing: border-box;
     margin-left: 0px;
     margin-right: 0px;
+    /* border: 1px solid #000000; */
+    padding: 0px;
+    gap: 10px;
 }
 
-
-.facts {
+#facts {
     display:flex;
     flex-direction: column;
     width: 20%;
@@ -40,25 +42,25 @@
     margin-right: 0px;
 }
 
-.facts h5{
-    margin-left: 10px;
+#facts h5{
+    margin-left: 5px;
     margin-top: 20px;
 }
 
-.facts li{
-    margin-left: 15px;
+#facts li{
+    margin-left: 10px;
 }
 
 
 #input-panel {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
     width: 35%;
     border: 1px solid #000000;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 #input-panel h5{
@@ -86,14 +88,13 @@
   }
 
 #checkEdible {
-    margin-top: 20px;
-    margin-left: 125px;
-    width: 25%;
+    margin-top: 10px;
+    width: 60%;
     margin-bottom: 20px;
 }
 
 #results {
-    width: 50%;
+    width: 45%;
     border: 1px solid #000000;
     border-radius: 10px;
     margin-bottom: 20px;

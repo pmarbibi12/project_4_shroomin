@@ -70,10 +70,10 @@ function is_edible() {
         // Handle the response from the API
         console.log("Response JSON:", data);
         const prediction = data.prediction; // Assuming your API returns a 'prediction' field
-        // alert(`Prediction: ${prediction}`);
+        alert(`Prediction: ${prediction}`);
         console.log(`Prediction: ${prediction}`);
         const results = d3.select('#results');
-        if (prediction < 1) {
+        if (prediction < .5) {
             results.append("p").text("I would not recommend eating this!");
         } 
         else {
