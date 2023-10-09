@@ -16,7 +16,7 @@
 
 .jumbotron {
     margin-top: 20px;
-    width: 75%;
+    width: 100%;
 }
 
 
@@ -25,11 +25,11 @@
     border-radius: 10px;
     margin-bottom: 15px;
     width: 100%;
+    padding: 20px;
 }
 
 #summary h3{
     margin-left: 20px;
-    margin-top: 10px;
 }
 
 #main {
@@ -65,14 +65,28 @@
 
 
 #facts-border h5{
-    margin-left: 5px;
+    margin-left: 15px;
     margin-top: 20px;
 }
 
 #facts-border li{
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
+#links {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#links p{
+    margin: 5px;
+}
 
 #input-panel {
     display: flex;
@@ -88,6 +102,7 @@
 #input-panel h5{
     margin-left: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #categories {
@@ -120,6 +135,7 @@
     display: flex;
     flex-wrap: wrap; /* Allow buttons to wrap to the next row */
     justify-content: flex-start; /* Start buttons from the left */
+    align-items: center;
 }
 
 .mushroom-button{

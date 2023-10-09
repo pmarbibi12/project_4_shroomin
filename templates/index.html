@@ -11,22 +11,29 @@
         <div class="jumbotron text-center">
             <h1>Got mushroom?</h1>
         </div>
-        <div id="summary" class="container">
+        <div id="summary">
             <h3>Our mission:</h3>
             <p>Whether you are firing up the grill for a weekend cookout or embarking on a quest to save a princess from an evil turtle-like creature, mushrooms can be the key ingredient for success! Our goal is to make identifying both delicious and potentially poisonous mushrooms as easy as possible. Utilizing the power of machine learning and the extensive dataset we've collected from UC Irvine's Machine Learning Repository, we've developed a sophisticated model capable of predicting whether a mushroom is edible or poisonous with precision.</p>
         </div>
-        <div class="container" id="main">
-            <div id="facts" class="container">
+        <div id="main">
+            <div id="facts">
                 <div id="facts-border">
                     <h5>Mushroom Facts:</h5>
                     <li>Fact 1</li>
                     <li>Fact 2</li>
                     <li>Fact 3</li>
                 </div>
+                <div id="links">
+                    <h5>Links:</h5>
+                    <p><a href="/data-visualizations" class="data-visualizations-link" target="_blank">Data Visualizations</a></p>
+                    <p><a href="/machine-learning" class="machine-learning-link" target="_blank">Our Machine Learning Journey</a></p>
+                    <p><a href="https://archive.ics.uci.edu/dataset/73/mushroom" target="_blank">Data Set</a></p>
+                    <p><a href="https://github.com/pmarbibi12/project_4_shroomin.git"  target="_blank">Git Repository</a></p>
+                </div>
             </div>
             <div id="input-panel">
                 <h5>Found a mushroom?</h5>
-                <div class="container" id="categories"></div>
+                <div id="categories"></div>
                 <button id="checkEdible" onclick="is_edible()">Edible?</button>
                 <p>Try these mushrooms!</p>
                 <div id="predefined_mushrooms" class="container">

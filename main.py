@@ -17,6 +17,14 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/machine-learning')
+def machine_learning():
+    return render_template('machine-learning.html')
+
+@app.route('/data-visualizations')
+def data_visualizations():
+    return render_template('data-visualizations.html')
+
 @app.route('/api/v1/data')
 def display_data():
     return jsonify(mushroom_json)

@@ -83,8 +83,14 @@ function is_edible() {
         if (prediction < .5) {
             results.append("p").text("I would not recommend eating this!");
         } 
-        else {
+        else if (prediction > .8){
             results.append("p").text("Most likely edible!");
+        }
+        else if (prediction >= .5){
+            results.append("p").text("Questionable!");
+        }
+        else {
+            results.append("p").text("You didn't select anything, silly!");
         }
       })
       .catch(error => {
