@@ -1,10 +1,22 @@
-#mushroom-container {
-    width: 100%;
-    height: 500px; /* Adjust the height as needed */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+    max-width: 80%; /* Set a maximum width of 80% of the viewport width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0px;
+}
+
+.container {
+    width:100%;
+    margin: 0px;
 }
 
 .jumbotron {
     margin-top: 20px;
+    width: 75%;
 }
 
 
@@ -12,6 +24,7 @@
     border: 1px solid #000000;
     border-radius: 10px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 #summary h3{
@@ -22,13 +35,10 @@
 #main {
     display: flex;
     flex-wrap: column;
-    width: 100%;
     box-sizing: border-box;
-    margin-left: 0px;
-    margin-right: 0px;
-    /* border: 1px solid #000000; */
     padding: 0px;
     gap: 10px;
+    width: 100%;
 }
 
 #facts {
@@ -36,7 +46,6 @@
     flex-direction: column;
     width: 20%;
     box-sizing: border-box;
-    /* border: 1px solid #000000; */
     border-radius: 10px;
     margin-bottom: 500px;
     margin-right: 0px;
@@ -108,15 +117,30 @@
 
 #predefined_mushrooms {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+    justify-content: flex-start; /* Start buttons from the left */
 }
 
-#predefined_mushrooms p{
-    margin-top: 10px;
-    margin-left: 5px;
+.mushroom-button{
+    min-width: 50px;
+    min-height: 50px;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center center;
+    padding: 10px; /* Adjust padding as needed */
+    margin: 5px; /* Add margin for spacing */
+    cursor: pointer;
+    color: transparent;
+    text-align: center; /* Center text horizontally */
+    transition: color 0.3s;
 }
 
-#predefined_mushrooms button{
-    margin: 5px;
+.mushroom-button:hover {
+    color: white; /* Show the text on hover */
 }
 
 #results {
