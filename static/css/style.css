@@ -36,18 +36,31 @@
     flex-direction: column;
     width: 20%;
     box-sizing: border-box;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-radius: 10px;
     margin-bottom: 500px;
     margin-right: 0px;
+    padding: 0px;
 }
 
-#facts h5{
+#facts-border {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+
+#facts-border h5{
     margin-left: 5px;
     margin-top: 20px;
 }
 
-#facts li{
+#facts-border li{
     margin-left: 10px;
 }
 
@@ -84,13 +97,26 @@
   
   /* Style the select elements to have a consistent width */
 .categorical-item select {
-    width: 30%; /* Ensure the select element fills its container */
+    width: 35%; /* Ensure the select element fills its container */
   }
 
 #checkEdible {
     margin-top: 10px;
     width: 60%;
     margin-bottom: 20px;
+}
+
+#predefined_mushrooms {
+    margin-bottom: 20px;
+}
+
+#predefined_mushrooms p{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#predefined_mushrooms button{
+    margin: 5px;
 }
 
 #results {
