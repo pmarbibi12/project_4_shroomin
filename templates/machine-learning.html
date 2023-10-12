@@ -2,15 +2,138 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/ml_style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
     <div class="main-container">
         <div class="jumbotron text-center">
-            <h1>Got mushroom?</h1>
+            <h1>Got Mushroom?</h1>
             <h3>Machine Learning</h3>
+        </div>
+        <div id="machine-learning">
+            <h5>What is machine learning?</h5>
+            <p>"Machine learning is a branch of artificial intelligence that empowers computer systems to automatically learn and improve from experience without being explicitly programmed. It relies on algorithms and statistical models to analyze and make predictions or decisions based on data, making it a powerful tool for tasks like pattern recognition, data classification, and predictive analytics."</p>
+        </div>
+        <div id="journey">
+            <h5>Pre-processing, Training, and Evaluation</h5>
+            <p>Quick Navigation</p>
+            <ul>
+                <li><a href="#importing-data">Import and Pre-process the Data</a></li>
+                <li><a href="#defining-neural-network">Define the Neural Network</a></li>
+                <li><a href="#compiling-and-training">Compile and Train the Model</a></li>
+                <li><a href="#evaluate-the-model">Evaluate the Model</a></li>
+            </ul>
+            <div id="importing-data">
+                <h5>Import and Pre-process the Data</h5>
+            </div>
+            <p>Data Source: <a href="https://archive.ics.uci.edu/dataset/73/mushroom">archive.ics.uci.edu</a></p>
+            <p>Programming Language: Python</p>
+            <h6>Import the Data Set:</h6>
+            <div id="import-data-code" class="code">
+                <pre>
+# import library
+from ucimlrepo import fetch_ucirepo
+
+# fetch dataset
+mushroom = fetch_ucirepo(id=73)
+
+# data (as pandas dataframes)
+X = mushroom.data.features
+y = mushroom.data.targets
+                </pre>
+            </div>
+            <h6>Pre-process the Data:</h6>
+            <div class="code">
+                <pre>
+# import libraries
+from sklearn.model_selection import train_test_split
+import pandas as pd
+
+# Preprocess the data
+X = pd.get_dummies(X)   # Convert categorical features to one-hot encoding
+y = pd.get_dummies(y)   # Convert the target variable to one-hot encoding
+y = y drop(columns=["poisonous_p"])  # Remove one-hot encoding column for 'poisonous_p'
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=69)
+                </pre>
+            </div>
+            <div id="defining-neural-network">
+                <h5>Define the Neural Network</h5>
+            </div>
+            <div id="defining-neural-network-code" class="code">
+                <pre>
+# import library
+import tensorflow as tf
+
+nn_model = tf.keras.models.Sequential()
+
+# First hidden layer
+nn_model.add(tf.keras.layers.Dense(units=22, activation="relu", input_dim=116)
+
+# Second hidden layer
+nn_model.add(tf.keras.layers.Dense(units=22, activation="relu")
+
+# Output layer
+nn_model.add(tf.keras.layers.Dense(units=1, activation="sigmoid")
+
+# Check the structure of the model
+nn_model.summary()
+                </pre>
+            </div>
+            <h6>Output:</h6>
+            <div class="code">
+                <pre>
+Model: "sequential"
+_________________________________________________________________
+    Layer (type)                Output Shape              Param #   
+=================================================================
+    dense (Dense)               (None, 22)                2574      
+                                                                    
+    dense_1 (Dense)             (None, 22)                506       
+                                                                    
+    dense_2 (Dense)             (None, 1)                 23        
+                                                                    
+=================================================================
+Total params: 3103 (12.12 KB)
+Trainable params: 3103 (12.12 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+                </pre>
+            </div>
+            <div id="compiling-and-training">
+                <h5>Compile and Train the Model</h5>
+            </div>
+            <div class="code">
+                <pre>
+# Compile the model
+nn_model.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
+
+# fit the model and start the training
+fit_model = nn_model.fit(X_train, y_train, epochs=100)
+                </pre>
+            </div>
+            <div id="evaluate-the-model">
+                <h5>Evaluate the Model</h5>
+            </div>
+            <div class="code">
+                <pre>
+# evaluate the model
+model_loss, model_accuracy = nn_model.evaluate(X_test, y_test, verbose=2)
+
+# print the results
+print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
+                </pre>
+            </div>
+            <h6>Output:</h6>
+            <div class="code">
+                <pre>
+64/64 - 0s - loss: 5.8587e-09 - accuracy: 1.0000 - 181ms/epoch - 3ms/step
+Loss: 5.858726837004724e-09, Accuracy: 1.0
+                </pre>
+            </div>
         </div>
     </div>
 </body>
