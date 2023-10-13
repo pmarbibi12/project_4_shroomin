@@ -17,8 +17,19 @@
 .jumbotron {
     margin-top: 20px;
     width: 100%;
+    text-align: left;
 }
 
+.jumbotron img {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.jumbotron h1{
+    display: inline-block;
+}
 
 #summary {
     border: 1px solid #000000;
@@ -63,6 +74,19 @@
     padding-bottom: 20px;
 }
 
+#facts-border p{
+    margin-right: 15px;
+    margin-left: 20px;
+    line-height: .75;
+}
+
+#facts-border h6{
+    margin-top: 10px;
+    margin-left: 15px;
+    
+}
+
+
 
 #facts-border h5{
     margin-left: 15px;
@@ -71,7 +95,10 @@
 
 #facts-border li{
     margin-left: 15px;
+    margin-right: 15px;
 }
+
+
 
 #links {
     display:flex;
@@ -107,16 +134,21 @@
 
 #categories {
     display: flex;
-    flex-direction: column; /* Display items in a column */
-    gap: 5px; /* Adjust the gap between label and dropdown containers as needed */
+    flex-direction: column; 
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+
   }
   
-  /* Style the labels to have a fixed width */
+  
 .categorical-item label {
     width: 200px; 
-    display: inline-block; /* Keep labels in a block to respect the width */
-    text-align: left; /* Align labels to the right */
-    margin-right: 10px; /* Add some spacing between label and dropdown */
+    display: inline-block; 
+    text-align: left;
+    margin-left: 0px;
   }
   
   /* Style the select elements to have a consistent width */
@@ -147,12 +179,13 @@
     background-size: contain;
     background-repeat: no-repeat; /* Prevent image repetition */
     background-position: center center;
-    padding: 10px; /* Adjust padding as needed */
+    /* padding: 10px; Adjust padding as needed */
     margin: 5px; /* Add margin for spacing */
     cursor: pointer;
     color: transparent;
     text-align: center; /* Center text horizontally */
     transition: color 0.3s;
+    border-radius: 5px;
 }
 
 .mushroom-button:hover {
