@@ -17,8 +17,19 @@
 .jumbotron {
     margin-top: 20px;
     width: 100%;
+    text-align: left;
 }
 
+.jumbotron img {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.jumbotron h1{
+    display: inline-block;
+}
 
 #summary {
     border: 1px solid #000000;

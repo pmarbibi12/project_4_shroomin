@@ -12,6 +12,54 @@
 .jumbotron {
     margin-top: 20px;
     width: 100%;
+    text-align: left;
+}
+
+.jumbotron img {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.jumbotron h1{
+    display: inline-block;
+}
+
+#main {
+    display: flex;
+    flex-wrap: column;
+    box-sizing: border-box;
+    padding: 0px;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#links {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    width: 20%;
+}
+
+#links-box {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+
+#links p{
+    margin: 5px;
 }
 
 #journey {
@@ -24,9 +72,13 @@
     margin-bottom: 15px;
 }
 
+#journey p{
+    margin-left: 20px;
+}
+
 .code {
     background-color: lightgray;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     padding: 10px;
     font-family: monospace; /* Use a monospace font for code */
     color: white;
