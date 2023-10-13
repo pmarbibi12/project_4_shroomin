@@ -74,6 +74,11 @@
 
 #journey p{
     margin-left: 20px;
+    line-height: .75;
+}
+
+#journey h6{
+    margin-left: 30px;
 }
 
 .code {
