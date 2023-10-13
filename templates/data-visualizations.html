@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./static/css/ml_style.css">
+    <link rel="stylesheet" href="./static/css/v_style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
@@ -14,7 +14,7 @@
             <h3>Data Visualizations</h3>
         </div>
         <div>
-            <h4>Welcome to our Mushroom Classifier Showcase! At the intersection of technology and nature, our cutting-edge machine learning model has been trained to tackle a critical question: "Is this mushroom safe to eat?" We are excited to present a series of data visualizations that not only demonstrate the incredible predictive power of our model but also shed light on the intricacies of the dataset it was trained on. These visualizations provide insights into how our model assigns weights to different features to determine the edibility of mushrooms, as well as uncover any potential biases in the data. Join us on a journey into the world of mushrooms, machine learning, and data transparency.</h4>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;Welcome to our Mushroom Classifier Showcase! At the intersection of technology and nature, our cutting-edge machine learning model has been trained to tackle a critical question: "Is this mushroom safe to eat?" We are excited to present a series of data visualizations that not only demonstrate the incredible predictive power of our model but also shed light on the intricacies of the dataset it was trained on. These visualizations provide insights into how our model assigns weights to different features to determine the edibility of mushrooms, as well as uncover any potential biases in the data. Join us on a journey into the world of mushrooms, machine learning, and data transparency.</h5>
         </div>
         <div id="main">
             <div id="links">
@@ -26,7 +26,90 @@
                     <p><a href="https://github.com/pmarbibi12/project_4_shroomin.git"  target="_blank">Git Repository</a></p>
                 </div>
             </div>
-            <div id="visuals"></div>
+            <div id="visuals">
+                <div>
+                    <img src="/static/assets/visuals/poison_vs_eds_PIE.png">
+                </div>
+                <div class="analysis">
+                    <p><b>Analysis:</b> The pie chart reveals a nearly balanced distribution of mushroom data, with approximately 51.8% categorized as edible and 48.2% as poisonous. This near equality between the two classes suggests that the dataset's class imbalance is relatively negligible. This balance simplifies model development and may reduce the need for extensive handling of class imbalances. However, it's still vital to address any potential data collection biases to ensure model fairness and reliability in predicting mushroom edibility.</p>
+                </div>
+                <div class="comparison">
+                    <img src="/static/assets/visuals/bruises_eds.png">
+                    <img src="/static/assets/visuals/bruises_poi.png">
+                </div>
+                <div class="legend">
+                    <p><b>Legend:</b></p>
+                    <p>t = Has Bruises&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f = No Bruises</p>
+                </div>
+                <div class="analysis">
+                    <p><b>Analysis:</b> The bar charts depict a correlation between the presence of bruises and mushroom edibility. Edible mushrooms are more likely to exhibit bruises, while poisonous mushrooms are more likely to be bruise-free. This suggests that the model assigns importance to the presence of bruises when classifying mushrooms as edible and conversely, it emphasizes the absence of bruises when considering mushrooms as potentially poisonous.</p>
+                </div>
+                <div class="comparison">
+                    <img src="/static/assets/visuals/g_color_eds.png">
+                    <img src="/static/assets/visuals/g_color_poi.png">
+                </div>
+                <div class="legend">
+                    <p><b>Legend:</b></p>
+                    <p>black=k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; brown=n</p>
+                    <p>buff=b &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chocolate=h</p>
+                    <p>gray=g &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; green=r</p>
+                    <p>orange=o &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pink=p</p>
+                    <p>purple=u &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; red=e</p>
+                    <p>white=w &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yellow=y</p>
+                </div>
+                <div class="analysis">
+                    <p><b>Analysis:</b> The bar charts illustrate a distinct connection between the color of mushroom gills and their edibility. Edible mushrooms predominantly feature gills of white, brown, or pink hues, while poisonous counterparts are proportionally more likely to exhibit buff-colored gills. This underscores the significance of gill color in assessing a mushroom's suitability for consumption. Notably, it's worth mentioning that while pink ranks as the third most prevalent gill color for edible mushrooms, it occupies the second spot among poisonous mushrooms, hinting at a notable variation in the color profile between the two categories.</p>
+                </div>
+                <div class="comparison">
+                    <img src="/static/assets/visuals/g_size_eds.png">
+                    <img src="/static/assets/visuals/g_size_poi.png">
+                </div>
+                <div class="legend">
+                    <p><b>Legend:</b></p>
+                    <p>b = Broad Gills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n = Narrow Gills</p>
+                </div>
+                <div class="analysis">
+                    <p><b>Analysis:</b> The bar charts presented above reveal a prevalent characteristic among edible mushrooms: the prominence of broad gills. However, when contrasting the distribution of broad gills and narrow gills in poisonous mushrooms, an interesting pattern emerges. While narrow gills do constitute a majority, the distribution is not as distinct for poisonous mushrooms featuring broad gills. This is precisely where the power of machine learning comes to the fore. Observing the graph for edible mushrooms allows one to infer that broad gills are a common feature in edibility. In contrast, when examining the graph for poisonous mushrooms, the inference becomes less straightforward, emphasizing the complexity and nuance inherent in determining their toxicity. These graphs underscore the significance of considering a range of characteristics beyond gill size when making determinations about a mushroom's edibility or toxicity.</p>
+                </div>
+                <div class="comparison">
+                    <img src="/static/assets/visuals/odor_eds.png">
+                    <img src="/static/assets/visuals/odor_poi.png">
+                </div>
+                <div class="legend">
+                    <p><b>Legend:</b></p>
+                    <p>almond=a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; anise=l &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; creosote=c</p>
+                    <p>fishy=y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; foul=f &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; musty=m</p>
+                    <p>none=n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pungent=p &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; spicy=s</p>
+                </div>
+                <div class="comparison">
+                    <img src="/static/assets/visuals/r_type_eds.png">
+                    <img src="/static/assets/visuals/r_type_poi.png">
+                </div>
+                <div class="legend">
+                    <p><b>Legend:</b></p>
+                    <p>cobwebby=c &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; evanescent=e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flaring=f &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; large=l</p>
+                    <p>none=n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pendant=p &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sheathing=s &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; zone=z</p>
+                </div>
+                <div class="comparison">
+                    <img src="/static/assets/visuals/s_print_color_eds.png">
+                    <img src="/static/assets/visuals/s_print_color_poi.png">
+                </div>
+                <div class="legend">
+                    <p><b>Legend:</b></p>
+                    <p>black=k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; brown=n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; buff=b</p>
+                    <p>chocolate=h &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; green=r &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; orange=o</p> 
+                    <p>purple=u &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; white=w  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yellow=y</p>
+                </div>
+                <div class="comparison">
+                    <img src="/static/assets/visuals/ssar_eds.png">
+                    <img src="/static/assets/visuals/ssar_poi.png">
+                </div>
+                <div class="legend">
+                    <p><b>Legend:</b></p>
+                    <p>fibrous=f &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scaly=y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; silky=k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; smooth=s</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>

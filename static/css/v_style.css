@@ -1,0 +1,116 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+    max-width: 80%; /* Set a maximum width of 80% of the viewport width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0px;
+}
+
+.container {
+    width:100%;
+    margin: 0px;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.jumbotron img {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.jumbotron h1{
+    display: inline-block;
+}
+
+#links {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    width: 20%;
+}
+
+#main {
+    display: flex;
+    flex-wrap: column;
+    box-sizing: border-box;
+    padding: 0px;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#links-box {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#links p{
+    margin: 5px;
+}
+
+#visuals {
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.analysis {
+    width: 80%;
+    background-color: rgb(243, 158, 158);
+    border: 1px solid #000000;
+    padding: 10px;
+    color: brown;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.comparison {
+    display: flex;
+    justify-content: space-between; /* This will create space between the images */
+}
+
+.comparison img {
+    display: inline-block; /* Set images to display inline */
+    max-width: 49%; /* To ensure they fit side by side and allow some spacing */
+}
+
+.legend {
+    /* width: 50%; */
+    background-color: rgb(142, 171, 216);
+    border: 1px solid #000000;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: .75;
+}
