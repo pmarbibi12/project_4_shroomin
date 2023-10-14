@@ -134,3 +134,11 @@
     flex-direction: column;
     line-height: .75;
 }
+
+#conclusion {
+    border: 1px solid #000000;
+    color: rgb(100, 81, 81);
+    background-color: rgb(236, 204, 177);
+    border-radius: 5px;
+    padding: 10px;
+}

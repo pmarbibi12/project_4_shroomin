@@ -51,12 +51,12 @@
                 </div>
                 <div class="legend">
                     <p><b>Legend:</b></p>
-                    <p>black=k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; brown=n</p>
-                    <p>buff=b &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chocolate=h</p>
-                    <p>gray=g &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; green=r</p>
-                    <p>orange=o &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pink=p</p>
-                    <p>purple=u &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; red=e</p>
-                    <p>white=w &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yellow=y</p>
+                    <p>k = Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n = Brown</p>
+                    <p>b = Buff &nbsp;&nbsp; h = Chocolate</p>
+                    <p>g = Gray &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; r = Green</p>
+                    <p>o = Orange &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p = Pink</p>
+                    <p>u = Purple &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e = Red</p>
+                    <p>w = White &nbsp;&nbsp;&nbsp;&nbsp; y = Yellow</p>
                 </div>
                 <div class="analysis">
                     <p><b>Analysis:</b> The bar charts illustrate a distinct connection between the color of mushroom gills and their edibility. Edible mushrooms predominantly feature gills of white, brown, or pink hues, while poisonous counterparts are proportionally more likely to exhibit buff-colored gills. This underscores the significance of gill color in assessing a mushroom's suitability for consumption. Notably, it's worth mentioning that while pink ranks as the third most prevalent gill color for edible mushrooms, it occupies the second spot among poisonous mushrooms, hinting at a notable variation in the color profile between the two categories.</p>
@@ -78,9 +78,12 @@
                 </div>
                 <div class="legend">
                     <p><b>Legend:</b></p>
-                    <p>almond=a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; anise=l &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; creosote=c</p>
-                    <p>fishy=y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; foul=f &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; musty=m</p>
-                    <p>none=n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pungent=p &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; spicy=s</p>
+                    <p>a = Almond &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; l = Anise &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c = Creosote</p>
+                    <p>y = Fishy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f = Foul &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m = Musty</p>
+                    <p>n = None &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p = Pungent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s = Spicy</p>
+                </div>
+                <div class="analysis">
+                    <p><b>Analysis:</b> Examining the bar chart for edible mushrooms, a clear pattern emerges: edible mushrooms predominantly exhibit no odor, followed by a pleasant aroma resembling almonds or anise, with the majority lacking any noticeable scent. In contrast, the bar chart for poisonous mushrooms reveals a stark contrast. An overwhelming number of these mushrooms emit foul odors, closely trailed by fishy and spicy scents. This stark difference highlights the significant role that odor plays in the determination of a mushroom's edibility or toxicity, emphasizing its utility as a distinguishing factor.</p>
                 </div>
                 <div class="comparison">
                     <img src="/static/assets/visuals/r_type_eds.png">
@@ -88,8 +91,11 @@
                 </div>
                 <div class="legend">
                     <p><b>Legend:</b></p>
-                    <p>cobwebby=c &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; evanescent=e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flaring=f &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; large=l</p>
-                    <p>none=n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pendant=p &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sheathing=s &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; zone=z</p>
+                    <p>c = Cobwebby &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e = Evanescent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f = Flaring &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; l = Large</p>
+                    <p>n = None &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p = Pendant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s = Sheathing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; z = Zone</p>
+                </div>
+                <div class="analysis">
+                    <p><b>Analysis:</b> The bar charts presented above provide a visual breakdown of ring types in both edible and poisonous mushrooms. In the case of edible mushrooms, the prevailing ring type is pendant-like, with evanescent rings following closely behind, and a smaller proportion exhibiting flaring rings. On the contrary, poisonous mushrooms predominantly feature evanescent rings, with a secondary presence of large rings, pendant rings, and a category of mushrooms with no rings. The coexistence of evanescent rings in both edible and poisonous varieties highlights the unreliability of using ring types as the sole determinant of edibility. Nevertheless, the graphs shed light on how the machine learning model assessed the significance of ring types in predicting edibility.</p>
                 </div>
                 <div class="comparison">
                     <img src="/static/assets/visuals/s_print_color_eds.png">
@@ -97,9 +103,12 @@
                 </div>
                 <div class="legend">
                     <p><b>Legend:</b></p>
-                    <p>black=k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; brown=n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; buff=b</p>
-                    <p>chocolate=h &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; green=r &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; orange=o</p> 
-                    <p>purple=u &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; white=w  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yellow=y</p>
+                    <p>k = Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n = Brown &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = Buff</p>
+                    <p>h = Chocolate &nbsp;&nbsp;&nbsp; r = Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o = Orange</p> 
+                    <p>u = Purple &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; w = White  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = Yellow</p>
+                </div>
+                <div class="analysis">
+                    <p><b>Analysis:</b> Now, let's direct our focus to the spore print colors of both edible and poisonous mushrooms. The data illustrates that brown and black spore prints dominate the spore print colors of edible mushrooms. Conversely, our dataset features a substantial number of poisonous mushrooms with white and chocolate spore prints. These bar charts underscore the fact that relying solely on mushroom spore print colors as a determinant of edibility or toxicity is an unreliable approach. Both edible and poisonous mushrooms share black, brown, and white spore print colors, complicating the task of differentiation based on spore prints. Additionally, the resemblance between brown and chocolate spore print colors further underscores the necessity of considering multiple factors in the determination of a mushroom's toxicity. </p>
                 </div>
                 <div class="comparison">
                     <img src="/static/assets/visuals/ssar_eds.png">
@@ -107,7 +116,14 @@
                 </div>
                 <div class="legend">
                     <p><b>Legend:</b></p>
-                    <p>fibrous=f &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scaly=y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; silky=k &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; smooth=s</p>
+                    <p>f = Fibrous &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = Scaly &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; k = Silky &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s = Smooth</p>
+                </div>
+                <div class="analysis">
+                    <p><b>Analysis:</b> In our final examination, we delve into the characteristics of the stalk surface of both edible and poisonous mushrooms. At first glance, it's evident that certain features in the stalk surface are shared between these two categories. Notably, a significant proportion of edible mushrooms in our dataset exhibit a smooth stalk surface. In contrast, poisonous mushrooms also display smooth stalks but are surpassed by those with a silky texture. Further exploration reveals that edible mushrooms exhibit diverse stalk surfaces, including fibrous, silky, and scaly textures. Similarly, in the case of poisonous mushrooms, while a portion has smooth and silky stalks, there are also instances of fibrous and scaly stalks, albeit at a smaller scale. Analyzing the bar charts sheds light on the weight assigned by our model to each stalk surface characteristic, providing insights into its contribution to classification.</p>
+                </div>
+                <div id="conclusion">
+                    <h6>Conclusion:</h6>
+                    <p>In summary, our exploration of various mushroom characteristics reveals the complexity of determining a mushroom's edibility or toxicity. While we haven't delved into every category in our dataset, the depicted charts offer valuable insights into the role of each characteristic in our machine learning model's decision-making process. These graphs also underscore the striking similarities in appearance, odor, and texture between edible and poisonous mushrooms. The endeavor of mushroom foraging, although enjoyable, should be approached with utmost caution, as the margin for error is slim. In such matters, it's advisable to defer to seasoned professionals with extensive expertise in the field, prioritizing safety above all else.</p>
                 </div>
             </div>
 
