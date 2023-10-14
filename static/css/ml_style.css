@@ -1,9 +1,8 @@
 @font-face {
-    font-family: 'gotmilk'; /* Choose a name for your custom font */
+    font-family: 'gotmilk'; 
     src: url('/static/assets/Gotmilk-Font.ttf') format('truetype');
-    /* You can also specify other formats like woff, woff2, eot for better compatibility */
   }
-  
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -19,6 +18,10 @@
     margin-top: 20px;
     width: 100%;
     text-align: left;
+    
+    font-stretch: condensed;
+    font-weight: bold;
+    font-size: 70px;
 }
 
 .jumbotron img {
@@ -26,6 +29,7 @@
     width: 100px;
     display: inline-block;
     vertical-align: bottom;
+    margin-right: 0px;
 }
 
 .jumbotron h1{
@@ -36,11 +40,9 @@
 }
 
 .jumbotron h3{
-    /* display: inline-block; */
     font-family: 'gotmilk', sans-serif;
     font-size: 40px;
 }
-
 #main {
     display: flex;
     flex-wrap: column;

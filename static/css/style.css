@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'gotmilk'; 
+    src: url('/static/assets/Gotmilk-Font.ttf') format('truetype');
+  }
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -18,6 +23,10 @@
     margin-top: 20px;
     width: 100%;
     text-align: left;
+    
+    font-stretch: condensed;
+    font-weight: bold;
+    font-size: 70px;
 }
 
 .jumbotron img {
@@ -25,10 +34,14 @@
     width: 100px;
     display: inline-block;
     vertical-align: bottom;
+    margin-right: 0px;
 }
 
 .jumbotron h1{
     display: inline-block;
+    font-size: 70px;
+    font-family: 'gotmilk', sans-serif;
+    letter-spacing: -2px;
 }
 
 #summary {
@@ -168,6 +181,7 @@
     flex-wrap: wrap; /* Allow buttons to wrap to the next row */
     justify-content: flex-start; /* Start buttons from the left */
     align-items: center;
+    text-align: center;
 }
 
 .mushroom-button{
@@ -177,13 +191,12 @@
     width: 150px;
     background-color: black;
     background-size: contain;
-    background-repeat: no-repeat; /* Prevent image repetition */
+    background-repeat: no-repeat; 
     background-position: center center;
-    /* padding: 10px; Adjust padding as needed */
-    margin: 5px; /* Add margin for spacing */
+    margin: 5px; 
     cursor: pointer;
     color: transparent;
-    text-align: center; /* Center text horizontally */
+    text-align: center; 
     transition: color 0.3s;
     border-radius: 5px;
 }

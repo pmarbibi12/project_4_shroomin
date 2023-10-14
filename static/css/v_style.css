@@ -1,7 +1,6 @@
 @font-face {
-    font-family: 'gotmilk'; /* Choose a name for your custom font */
+    font-family: 'gotmilk'; 
     src: url('/static/assets/Gotmilk-Font.ttf') format('truetype');
-    /* You can also specify other formats like woff, woff2, eot for better compatibility */
   }
 
 .main-container {
@@ -46,7 +45,6 @@
 }
 
 .jumbotron h3{
-    /* display: inline-block; */
     font-family: 'gotmilk', sans-serif;
     font-size: 40px;
 }
