@@ -298,7 +298,7 @@ function predefined_buttons(mushroomType) {
         'Cap-color': 'r',   
         'Bruises': 't',
         'Odor': 'l',       
-        'Gill-attachment': 'a',
+        'Gill-attachment': 'f',
         'Gill-spacing': 'w', 
         'Gill-size': 'n',    
         'Gill-color': 'w',

@@ -18,8 +18,7 @@
 .jumbotron {
     margin-top: 20px;
     width: 100%;
-    text-align: left;
-    
+    text-align: center;
     font-stretch: condensed;
     font-weight: bold;
     font-size: 70px;
@@ -46,6 +45,7 @@
     font-size: 40px;
     color: 	#451800;
 }
+
 #main {
     display: flex;
     flex-wrap: column;
@@ -67,6 +67,15 @@
     color: 	#451800;
 }
 
+#machine-learning {
+    border: 2px solid #694b4b;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffcbc4;
+}
+
 #links-box {
     display:flex;
     flex-direction: column;
@@ -75,9 +84,9 @@
     padding-bottom: 20px;
     margin-bottom: 15px;
     width: 100%;
-    border: 1px solid #afddd5;
+    border: 2px solid #694b4b;
     border-radius: 10px;
-    background-color: #cee8e5;
+    background-color: #feddcb;
     color: 	#451800;
 }
 
@@ -92,10 +101,10 @@
     margin: 0px;
     padding: 20px;
     gap: 20px;
-    border: 1px solid #ffcba5;
+    border: 2px solid #694b4b;
     border-radius: 10px;
     margin-bottom: 15px;
-    background-color: #ffcba5;
+    background-color: #feddcb;
     color: 	#451800;
 }
 
@@ -110,7 +119,7 @@
 
 .code {
     background-color: #ffcbc4;
-    border: 1px solid #ffb27b;
+    border: 1px solid #694b4b;
     padding: 10px;
     font-family: monospace; /* Use a monospace font for code */
     color: white;
