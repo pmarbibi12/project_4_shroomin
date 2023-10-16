@@ -1,6 +1,6 @@
 #results {
     width: 45%;
-    border: 1px solid #000000;
+    border: 1px solid #ffb27b;
     border-radius: 10px;
     margin: 20px auto 0;
     margin-top: 0px;
@@ -36,6 +36,7 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    border-color: #ffa7a6;
 }
 
 
@@ -58,7 +59,7 @@
     max-height: 100%;
     border-radius: 10px;
     margin: 0px;
-    border: 3px solid #000000;
+    border: 3px solid #ff9899;
     border-radius: 10px;
 }
 

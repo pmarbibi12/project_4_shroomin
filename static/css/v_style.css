@@ -12,6 +12,7 @@
     max-width: 80%; /* Set a maximum width of 80% of the viewport width */
     margin: 0 auto; /* Center the container horizontally */
     padding: 0px;
+    color: 	#451800;
 }
 
 .container {
@@ -42,11 +43,13 @@
     font-size: 70px;
     font-family: 'gotmilk', sans-serif;
     letter-spacing: -2px;
+    color: 	#451800;
 }
 
 .jumbotron h3{
     font-family: 'gotmilk', sans-serif;
     font-size: 40px;
+    color: 	#451800;
 }
 
 #links {
@@ -56,6 +59,7 @@
     padding-bottom: 20px;
     margin-bottom: 15px;
     width: 20%;
+    color: 	#451800;
 }
 
 #main {
@@ -66,6 +70,7 @@
     gap: 10px;
     width: 100%;
     margin-top: 20px;
+    color: 	#451800;
 }
 
 #links-box {
@@ -76,8 +81,10 @@
     padding-bottom: 20px;
     margin-bottom: 15px;
     width: 100%;
-    border: 1px solid #000000;
+    border: 1px solid #afddd5;
     border-radius: 10px;
+    color: 	#451800;
+    background-color: #cee8e5;
 }
 
 #links p{
@@ -89,21 +96,22 @@
     margin: 0px;
     padding: 20px;
     gap: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #fdbb9f;
     border-radius: 10px;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #feddcb;
 }
 
 .analysis {
     width: 80%;
-    background-color: rgb(243, 158, 158);
-    border: 1px solid #000000;
+    background-color: #ffcbc4;
+    border: 1px solid #ff9899;
     padding: 10px;
-    color: brown;
+    color: 	#451800;
     border-radius: 5px;
     margin: 10px;
 }
@@ -120,10 +128,10 @@
 
 .legend {
     /* width: 50%; */
-    background-color: rgb(142, 171, 216);
-    border: 1px solid #000000;
+    background-color: #ffcba5;
+    border: 1px solid #ffb27b;
     padding: 10px;
-    color: rgb(255, 255, 255);
+    color: 	#451800;
     border-radius: 5px;
     margin: 10px;
     display: flex;
@@ -134,9 +142,9 @@
 }
 
 #conclusion {
-    border: 1px solid #000000;
-    color: rgb(100, 81, 81);
-    background-color: rgb(236, 204, 177);
+    border: 1px solid #afddd5;
+    color: 	#451800;;
+    background-color: #cee8e5;
     border-radius: 5px;
     padding: 10px;
 }

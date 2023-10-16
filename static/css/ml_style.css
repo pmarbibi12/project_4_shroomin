@@ -12,6 +12,7 @@
     max-width: 80%; /* Set a maximum width of 80% of the viewport width */
     margin: 0 auto; /* Center the container horizontally */
     padding: 0px;
+    color: 	#451800;
 }
 
 .jumbotron {
@@ -37,11 +38,13 @@
     font-size: 70px;
     font-family: 'gotmilk', sans-serif;
     letter-spacing: -2px;
+    color: 	#451800;
 }
 
 .jumbotron h3{
     font-family: 'gotmilk', sans-serif;
     font-size: 40px;
+    color: 	#451800;
 }
 #main {
     display: flex;
@@ -51,6 +54,7 @@
     gap: 10px;
     width: 100%;
     margin-top: 20px;
+    color: 	#451800;
 }
 
 #links {
@@ -60,6 +64,7 @@
     padding-bottom: 20px;
     margin-bottom: 15px;
     width: 20%;
+    color: 	#451800;
 }
 
 #links-box {
@@ -70,13 +75,16 @@
     padding-bottom: 20px;
     margin-bottom: 15px;
     width: 100%;
-    border: 1px solid #000000;
+    border: 1px solid #afddd5;
     border-radius: 10px;
+    background-color: #cee8e5;
+    color: 	#451800;
 }
 
 
 #links p{
     margin: 5px;
+    color: 	#451800;
 }
 
 #journey {
@@ -84,9 +92,11 @@
     margin: 0px;
     padding: 20px;
     gap: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #ffcba5;
     border-radius: 10px;
     margin-bottom: 15px;
+    background-color: #ffcba5;
+    color: 	#451800;
 }
 
 #journey p{
@@ -99,8 +109,8 @@
 }
 
 .code {
-    background-color: lightgray;
-    border: 1px solid #000000;
+    background-color: #ffcbc4;
+    border: 1px solid #ffb27b;
     padding: 10px;
     font-family: monospace; /* Use a monospace font for code */
     color: white;
