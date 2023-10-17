@@ -148,7 +148,7 @@ function create_predefined_options() {
       { name: "Shiitake Mushrooms", image: "Shiitakegrowing.jpg" },
       { name: "Oyster Mushrooms", image: "oyster_mushrooms.jpg" },
       { name: "Enoki Mushrooms", image: "enoki.jpg" },
-      { name: "Death Cap Mushrooms", image: "Death_cap.jpg" },
+      { name: "Death Cap Mushrooms", image: "Death_Cap.jpg" },
       { name: "Fly Agaric Mushrooms", image: "fly_agaric.jpg" }
     ];
   
